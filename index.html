@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./imagenes/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="./estilo.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./imagenes/logo.png" alt="Logo">
+            <div>
+                <img onclick="showCart(this)" class="cart" src="./imagenes/cart.png" alt="Carrito">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Cesta de compra</h3>
+                <div class="card-items">
+                </div>
+                <h4>Total: $<strong class="price-total">0</strong></h4>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/1c-arena.jpeg" alt="1 cuerpo color arena">
+                    <p><span>299.990</span>$</p>
+                </div>
+                <p class="title">Sofá 1 cuerpo color arena</p>
+                <a href="" data-id="1" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/1c-blanco.jpeg" alt="1 cuerpo color blanco">
+                    <p><span>349.990</span>$</p>
+                </div>
+                <p class="title">Sofá 1 cuerpo color blanco</p>
+                <a href="" class="btn-add-cart" data-id="2">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/1c-gris.jpeg" alt="1 cuerpo color gris">
+                    <p><span>399.990</span>$</p>
+                </div>
+                <p class="title">Sofá 1 cuerpo color gris</p>
+                <a href="" data-id="3" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/1c-negro.jpeg" alt="1 cuerpo color negro">
+                    <p><span>449.990</span>$</p>
+                </div>
+                <p class="title">Sofá 1 cuerpo color negro</p>
+                <a href="" data-id="4" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/2c-crudo.jpeg" alt="2 cuerpos color crudo">
+                    <p><span>499.990</span>$</p>
+                </div>
+                <p class="title">Sofá 2 cuerpos color crudo</p>
+                <a href="" data-id="5" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/2c-cuero.jpeg" alt="2 cuerpos color cuero">
+                    <p><span>549.990</span>$</p>
+                </div>
+                <p class="title">Sofá 2 cuerpos color cuero</p>
+                <a href="" data-id="6" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/2c-negro.jpeg" alt="2 cuerpos color negro">
+                    <p><span>599.990</span>$</p>
+                </div>
+                <p class="title">Sofá 2 cuerpos color negro</p>
+                <a href="" data-id="7" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/2c-gris.jpeg" alt="2 cuerpos color gris">
+                    <p><span>649.990</span>$</p>
+                </div>
+                <p class="title">Sofá 2 cuerpos color gris</p>
+                <a href="" data-id="8" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/3c-blanco.jpeg" alt="3 cuerpos color blanco">
+                    <p><span>699.990</span>$</p>
+                </div>
+                <p class="title">Sofá 3 cuerpos color blanco</p>
+                <a href="" data-id="9" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/3c-cafe.jpeg" alt="3 cuerpos color cafe">
+                    <p><span>749.990</span>$</p>
+                </div>
+                <p class="title">Sofá 3 cuerpos color café</p>
+                <a href="" data-id="10" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/3c-crudo.jpeg" alt="3 cuerpos color crudo">
+                    <p><span>799.990</span>$</p>
+                </div>
+                <p class="title">Sofá 3 cuerpos color crudo</p>
+                <a href="" data-id="11" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/3c-gris.jpeg" alt="3 cuerpos color gris">
+                    <p><span>849.990</span>$</p>
+                </div>
+                <p class="title">Sofá 3 cuerpos color gris</p>
+                <a href="" data-id="12" class="btn-add-cart">agregar a la cesta</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+            <a href="https://es-la.facebook.com/" target="_blank"><img src="./imagenes/facebook.png" alt="nuestro facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./imagenes/instagram.png" alt="nuestro instagram"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="./imagenes/whatsapp.png" alt="nuestro whatsapp"></a>
+            <h5>
+                Bo Concept &reg Premium Reseller - Chile
+            </h5>
+    </footer>
+
+    <script src="./funcionalidad.js"></script>
+    <script src="./main.js" ></script>
+</body>
+</html>
